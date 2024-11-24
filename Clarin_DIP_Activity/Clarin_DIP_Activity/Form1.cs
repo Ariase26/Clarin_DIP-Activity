@@ -235,5 +235,13 @@ namespace Clarin_DIP_Activity
             pictureBox1.Image = resizedFrame;
             frame.Dispose();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 otherFunctions = new Form3();
+            otherFunctions.FormClosed += (s, args) => this.Show();
+            otherFunctions.Show();
+            this.Hide();
+        }
     }
 }
